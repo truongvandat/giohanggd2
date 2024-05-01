@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Liên hệ - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+    <script src="js/dungchung.js"></script>
+    <script src="js/lienhe.js"></script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-lienhe">
+            <div class="lienhe-header">Liên hệ</div>
+            <div class="lienhe-info">
+                <div class="info-left">
+                
+                        <h2 style="color: gray"> Trường Đại học Sư phạm Đà Nẵng - Đại học Đà Nẵng </h2><br />
+                        <b>Địa chỉ:</b> 459 Tôn Đức Thắng, Quận Liên Chiểu, Thành phố Đà Nẵng<br /><br />
+                        <b>Website:</b> <a href="https://ued.udn.vn/">https://ued.udn.vn/</a> <br /><br />
+                        <b>E-mail:</b> khamko1191@gmail.com<br /><br />
+                        
+                            <p>     Chúng em xin chân thành cảm ơn vì sự hướng dẫn tận tình và kiến thức sâu rộng mà quý 
+                                thầy Võ Công Đình đã chia sẻ trong môn lập trình JavaScript. Nhờ những kiến thức quý
+                                 báu từ quý thầy, nhóm chúng em đã có cơ hội xây dựng một trang web bán điện thoại một 
+                                 cách thành công. Sự hỗ trợ và khích lệ từ phía quý thầy đã là nguồn động viên lớn giúp 
+                                 chúng em vượt qua những thách thức trong quá trình học tập và thực hành.
+                                Xin được bày tỏ lòng biết ơn sâu sắc đến quý thầy và hy vọng sẽ tiếp tục nhận được 
+                                sự chỉ dẫn và động viên từ phía quý thầy trong những hành trình học tập sắp tới.
+                                <br>
+                                <br>
+                                Trân trọng,NHÓM 8
+                            </p>
+
+                        
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="lienhe-info">
+                <div class="thongtinnhom">
+                    <p style="font-size: 22px; color: gray">Thông tin thành viên nhóm: </p>
+                    <hr />
+                    <table>
+                        <tr>
+                            <th>Họ tên</th>
+                            <th>MSV</th>
+                            <th>Giới tính</th>
+                            <th>Lớp</th>
+                            <th>Phân công nhiệm vụ</th>
+                        </tr>
+                        <script>
+                            var thongtin = [
+                                ["Nguyễn Thuý Hằng", "3120223050", "Nữ", "21CNTT3","...."],
+                                ["Xaiyasith Khamko", "3120221520", "Nam", "21CNTT4","...."],
+                                ["Trương Văn Đạt", "31202215..", "Nam", "21CNTT3","...."],
+                                ["Triệu Thị Hồng Thương", "31202215..", "Nữ", "21CNTT3","...."],
+                                ["Nguyễn Nho Phương Nguyên", "31202215..", "Nữ", "21CNTT3","...."],
+                                ["Nguyễn Văn Quốc", "31202215..", "Nam", "21CNTT1","...."],
+                                ["Bạch Văn Nguyên", "31202215..", "Nam", "21CNTT1","...."],
+                                ["Dang Huu Ngoc", "31202215..", "Nam", "21CNTT1","...."]
+                               
+                            ]
+                            for (var i = 0; i < thongtin.length; i++) {
+                                document.write(
+                                    `
+                                    <tr>
+                                        <td>` +
+                                    thongtin[i][0] + `</td>
+                                        <td>` +
+                                    thongtin[i][1] + `</td>
+                                        <td>` +
+                                    thongtin[i][2] + `</td>
+                                        <td>` +
+                                    thongtin[i][3] + `</td>
+                                        <td>` +
+                                    thongtin[i][4] +
+                                    `</td>
+                                    </tr>
+                                `
+                                )
+                            }
+                        </script>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        addContainTaiKhoan();
+    </script>
+
+    <div class="footer">
+        <script>
+            addFooter();
+        </script>
+
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

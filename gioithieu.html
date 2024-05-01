@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>
+                    Môn học Lập trình JavaScript đóng vai trò không thể phủ nhận trong quá trình học của chúng em. 
+                    Từ việc hiểu cơ bản về ngôn ngữ JavaScript đến việc áp dụng nó vào phát triển các ứng dụng web động,
+                    môn học này đã mang lại cho chúng tôi nền tảng kiến thức vững chắc và kỹ năng thực hành cần thiết để 
+                    thành công trong lĩnh vực này.
+                    
+                    <br> <br>
+
+                  Đề tài "Xây dựng website bán điện thoại" không chỉ là một đồ án thực hành mà còn là một cơ hội để chúng 
+                  em thể hiện sự sáng tạo và áp dụng những kiến thức đã học vào thực tế. Trong quá trình phát triển trang web này, 
+                  chúng tôi sẽ tận dụng JavaScript để tạo ra một giao diện tương tác, linh hoạt và hấp dẫn. Từ việc xây dựng chức 
+                  năng tìm kiếm, sắp xếp sản phẩm đến việc tạo ra các hiệu ứng động và giao diện người dùng thân thiện, mục tiêu của 
+                  chúng tôi là mang lại trải nghiệm mua sắm trực tuyến tốt nhất cho người dùng và đồng thời thể hiện khả năng áp dụng
+                   kiến thức lập trình vào thực tế của nhóm.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
